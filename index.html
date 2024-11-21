@@ -1,10 +1,74 @@
 <!DOCTYPE html>
-<html>
-   <head>
-      <title>My Cool Website</title>
-   </head>
-   <body>
-      <h1>Welcome to my website! ⭐️</h1>
-      <p>How was your day? 🎉</p>
-   </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rentas Travel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Rentas Travel</div>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Your Gateway to Memorable Journeys</h1>
+        <p>Explore the beauty of Turkey and beyond with Rentas Travel.</p>
+        <a href="#contact" class="cta-button">Plan Your Trip</a>
+    </section>
+
+    <section id="services" class="section">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service">
+                <h3>Custom Tours</h3>
+                <p>Personalized travel experiences tailored to your preferences.</p>
+            </div>
+            <div class="service">
+                <h3>Flight Bookings</h3>
+                <p>Hassle-free flight booking assistance for your trips.</p>
+            </div>
+            <div class="service">
+                <h3>Hotel Arrangements</h3>
+                <p>Best deals on accommodations to suit your style and budget.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="section">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonials-container">
+            <blockquote>
+                <p>"Rentas Travel made our trip to Turkey unforgettable! Highly recommended."</p>
+                <cite>– Sarah L.</cite>
+            </blockquote>
+            <blockquote>
+                <p>"The best travel agency I’ve ever worked with. Excellent service and support!"</p>
+                <cite>– Ahmed K.</cite>
+            </blockquote>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <form action="https://formspree.io/f/example" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Rentas Travel. All rights reserved.</p>
+    </footer>
+</body>
 </html>
