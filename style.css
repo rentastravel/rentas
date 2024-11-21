@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f9f9f9;
@@ -17,14 +17,17 @@ header {
     background: navy;
     color: white;
     padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
     padding: 0 1rem;
 }
 
@@ -46,41 +49,59 @@ nav .menu a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav .menu a:hover {
+    color: orange;
 }
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(orange, navy);
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
     color: white;
     text-align: center;
     padding: 4rem 1rem;
+    position: relative;
+    height: 100vh;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .hero h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
 }
 
 .hero .cta-button {
-    background: white;
-    color: navy;
+    background: orange;
+    color: white;
     padding: 0.75rem 1.5rem;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
-    margin-top: 1rem;
     display: inline-block;
+    transition: background 0.3s;
 }
 
-/* Section Styling */
+.hero .cta-button:hover {
+    background: darkorange;
+}
+
+/* Sections */
 .section {
     max-width: 1200px;
     margin: 2rem auto;
     padding: 0 1rem;
+    text-align: center;
 }
 
 .section h2 {
-    text-align: center;
     margin-bottom: 2rem;
     color: navy;
 }
@@ -88,46 +109,56 @@ nav .menu a {
 /* Services */
 .services-container {
     display: flex;
-    justify-content: space-around;
-    text-align: center;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .service {
     flex: 1;
-    margin: 0 1rem;
-    padding: 1rem;
     background: white;
-    border: 1px solid #ccc;
+    padding: 1rem;
     border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.service img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.service:hover {
+    transform: translateY(-5px);
 }
 
 /* Testimonials */
 .testimonials-container {
-    text-align: center;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
     margin-top: 1rem;
 }
 
-blockquote {
-    font-style: italic;
-    margin: 1rem 0;
-}
-
-cite {
-    display: block;
-    margin-top: 0.5rem;
-    color: navy;
+.testimonial {
+    flex: 1;
+    background: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Contact */
-form {
+.contact form {
     max-width: 600px;
     margin: 0 auto;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 form input, form textarea, form button {
     width: 100%;
-    margin-bottom: 1rem;
     padding: 0.75rem;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -139,6 +170,11 @@ form button {
     font-weight: bold;
     border: none;
     cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: darkorange;
 }
 
 /* Footer */
