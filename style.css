@@ -1,20 +1,21 @@
-/* General Reset */
-* {
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  color: #333;
+  background-color: #F9F9F9; /* Soft, neutral background */
 }
 
-body {
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background-color: #F5F5F5;
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
 }
 
 /* Header */
 .header {
-  background: #0E7490;
+  background: #0056D2; /* Trust-building deep blue */
   color: #FFF;
   padding: 1rem 2rem;
   display: flex;
@@ -22,27 +23,18 @@ body {
   align-items: center;
 }
 
-.header .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
+.header .logo img {
+  width: 100px;
 }
 
-.header .nav ul {
+.nav-links {
   list-style: none;
   display: flex;
   gap: 1.5rem;
 }
 
-.header .nav a {
+.nav-links a {
   color: #FFF;
-  text-decoration: none;
-}
-
-.header .cta-button {
-  background: #FF6F3C;
-  color: #FFF;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
 }
@@ -50,70 +42,93 @@ body {
 /* Hero Section */
 .hero {
   background: url('https://source.unsplash.com/1600x900/?turkey,travel') no-repeat center center/cover;
-  height: 90vh;
+  height: 100vh;
   color: #FFF;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
-.hero-overlay {
-  background: rgba(0, 0, 0, 0.5);
+.hero-content {
+  background: rgba(0, 0, 0, 0.6); /* Slight overlay for better text readability */
   padding: 2rem;
   border-radius: 10px;
 }
 
-.hero h1 {
+.hero-content h1 {
   font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
-.hero p {
-  margin: 1rem 0;
+.hero-content p {
+  margin-bottom: 1.5rem;
 }
 
-.hero .cta-button {
-  background: #FF6F3C;
+.hero-content .cta-button {
+  background: #FF6F3C; /* Vibrant orange for action buttons */
   color: #FFF;
   padding: 0.75rem 1.5rem;
+  border: none;
   text-decoration: none;
-  border-radius: 5px;
   font-weight: bold;
+  border-radius: 5px;
 }
 
-/* Features Section */
-.features {
-  padding: 2rem;
-  background: #FFF;
+/* Section Styles */
+section {
+  padding: 4rem 0;
   text-align: center;
 }
 
-.features h2 {
-  color: #0E7490;
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #0056D2;
 }
 
-.feature-container {
+.about, .team, .services, .contact {
+  background-color: #FFFFFF; /* Clean white for sections */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+.team-grid, .services-grid {
   display: flex;
-  justify-content: center;
   gap: 2rem;
-  margin-top: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.feature-item {
-  background: #F2E9DC;
-  padding: 1rem;
+.team-member img, .service-card img {
+  width: 100%;
   border-radius: 5px;
-  width: 30%;
 }
 
-.feature-item h3 {
-  color: #FF6F3C;
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background: #FF6F3C;
+  color: #FFF;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 /* Footer */
 .footer {
-  background: #0E7490;
+  background: #0056D2;
   color: #FFF;
   text-align: center;
-  padding: 1rem 0;
+  padding: 1rem;
 }
