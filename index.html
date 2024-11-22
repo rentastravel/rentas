@@ -2,136 +2,62 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Rentas Travel - Your Travel Companion</title>
-  <meta name="description" content="Explore Turkey and beyond with Rentas Travel. Custom tours, flight bookings, and hotel arrangements tailored to your needs.">
-  <meta name="keywords" content="travel, Rentas Travel, tours, Turkey, custom tours, flight booking, hotel arrangements">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rentas Travel - Explore Turkey</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="index-page">
-
+<body>
   <!-- Header -->
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
-        <h1 class="sitename">Rentas Travel</h1>
-      </a>
-      <nav id="navmenu" class="navmenu">
+  <header class="header">
+    <div class="container">
+      <div class="logo">Rentas Travel</div>
+      <nav class="nav">
         <ul>
-          <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#team">Team</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact">Contact Us</a></li>
         </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
+      <a href="#contact" class="cta-button">Book Now</a>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section id="hero" class="hero section dark-background">
-    <img src="assets/img/hero-bg.jpg" alt="" class="hero-bg">
-    <div class="container">
-      <div class="row gy-4 justify-content-between">
-        <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-in">
-          <h1>Explore Turkey with Rentas Travel</h1>
-          <p>Discover breathtaking destinations with our tailored tours, hassle-free bookings, and premium services.</p>
-          <div class="d-flex">
-            <a href="#services" class="btn-get-started">View Our Services</a>
-          </div>
-        </div>
-        <div class="col-lg-4 hero-img" data-aos="zoom-out">
-          <img src="assets/img/travel-hero.png" class="img-fluid" alt="Travel">
-        </div>
+  <section id="home" class="hero">
+    <div class="hero-overlay">
+      <h1>Explore Turkey Like Never Before</h1>
+      <p>Adventure awaits you in every corner of Turkey. Let us guide your journey.</p>
+      <a href="#services" class="cta-button">Start Your Journey</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <h2>Why Travel With Us?</h2>
+    <div class="feature-container">
+      <div class="feature-item">
+        <h3>Custom Tours</h3>
+        <p>Personalized trips to match your interests.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Expert Guides</h3>
+        <p>Knowledgeable local guides to enhance your experience.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Affordable Packages</h3>
+        <p>Travel without breaking the bank.</p>
       </div>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="about section">
-    <div class="container" data-aos="fade-up">
-      <div class="row align-items-center">
-        <div class="col-lg-6">
-          <h2>About Rentas Travel</h2>
-          <p>We provide exceptional travel services to ensure your journey is seamless and memorable. Whether you're exploring Turkey's rich culture or planning a multi-city adventure, we're here to guide you every step of the way.</p>
-        </div>
-        <div class="col-lg-6">
-          <img src="assets/img/about-us.jpg" alt="About Rentas Travel" class="img-fluid">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Services Section -->
-  <section id="services" class="services section">
-    <div class="container" data-aos="fade-up">
-      <h2>Our Services</h2>
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="service">
-            <i class="bi bi-globe"></i>
-            <h3>Custom Tours</h3>
-            <p>Tailor-made itineraries designed just for you.</p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="service">
-            <i class="bi bi-airplane"></i>
-            <h3>Flight Booking</h3>
-            <p>Affordable and convenient flight arrangements.</p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="service">
-            <i class="bi bi-house"></i>
-            <h3>Hotel Booking</h3>
-            <p>Luxurious stays at competitive rates.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact section">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <p>Reach out to us for inquiries or bookings.</p>
-      <form action="#" method="post" class="contact-form">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send</button>
-      </form>
-    </div>
-  </section>
-
+  <!-- Footer -->
   <footer class="footer">
-    <p>&copy; 2024 Rentas Travel. All Rights Reserved.</p>
+    <p>&copy; 2024 Rentas Travel. All rights reserved.</p>
   </footer>
-
-  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
