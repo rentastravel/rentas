@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   color: #333;
-  background-color: #F9F9F9; /* Soft, neutral background */
+  background-color: #F9F9F9;
 }
 
 .container {
@@ -21,6 +21,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .header .logo img {
@@ -133,40 +134,40 @@ section h2 {
   padding: 1rem;
 }
 
-/* Gallery Section */
-.discover-turkey {
-  padding: 4rem 0;
-  text-align: center;
+/* Responsive Design for Mobile and Tablets */
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  /* Adjust header for mobile */
+  .header {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  /* Make the team and services grid stack vertically on mobile */
+  .team-grid, .services-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-member, .service-card {
+    width: 80%;
+  }
 }
 
-.discover-turkey h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: #0056D2;
-}
-
-.discover-turkey p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-}
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1rem;
-}
-
-.gallery a {
-  display: block;
-}
-
-.gallery img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-  transition: transform 0.3s ease;
-}
-
-.gallery img:hover {
-  transform: scale(1.05);
-}
+/* Tablet Styles */
+@media (max-width: 1024px) {
+  /* Adjust hero section for tablet */
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
